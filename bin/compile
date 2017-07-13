@@ -68,6 +68,8 @@ if [ -n "${MINECRAFT_EULA:-""}" ]; then
   echo -n "-----> Accepting Minecraft EULA... "
   echo "eula=true" >> $BUILD_DIR/eula.txt
   echo "online-mode=false" >> $BUILD_DIR/server.properties
+  echo "max-players=150000" >> $BUILD_DIR/server.properties
+  echo "gamemode=1" >> $BUILD_DIR/server.properties
   echo "done"
 fi
 
